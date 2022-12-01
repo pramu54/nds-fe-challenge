@@ -1,0 +1,33 @@
+.shape{
+    width: 600px;
+    height: 400px;
+    background-color: #315332;
+    border-radius: 1200px 300px 500px 60px;
+    margin-top: 50px;
+    position: relative;
+}
+
+#sofa1{
+    position: relative;
+    margin-top: 90px;
+    margin-left: 40px;
+    z-index: 1;
+}
+
+#sofa1:hover{
+    width: 550px;
+    height: auto;
+}
+
+#table1{
+    position: absolute;
+    z-index: 2;
+    margin-top: 100px;
+    top: 150px;
+    right: 170px;
+}
+
+#table1:hover{
+    width: 350px;
+    height: auto;
+}

@@ -1,0 +1,12 @@
+.link-style{
+    list-style-type: none;
+    color: #324f30;
+}
+
+li{
+    margin: 10px 0;
+}
+
+#head-office{
+    font-weight: bold;
+}
