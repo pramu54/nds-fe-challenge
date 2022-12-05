@@ -7,8 +7,8 @@ const theme = createTheme({
       contrastText: '#fff',
     },
     buttonSecondary: {
-        main: '#324f30',
-        contrastText: '#fff',
+      main: '#324f30',
+      contrastText: '#fff',
     },
   },
 });

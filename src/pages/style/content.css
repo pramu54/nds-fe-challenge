@@ -12,6 +12,9 @@
     margin-top: 90px;
     margin-left: 40px;
     z-index: 1;
+    animation-name: move;
+    animation-duration: 2s;
+    transition: width 1s, height 1s;
 }
 
 #sofa1:hover{
@@ -19,15 +22,109 @@
     height: auto;
 }
 
+@keyframes move {
+    0%      {opacity: 0; bottom: 200px;}
+    100%    {opacity: 1; bottom: 0px;}
+}
+
 #table1{
-    position: absolute;
+    position: relative;
     z-index: 2;
     margin-top: 100px;
-    top: 150px;
-    right: 170px;
+    bottom: 150px;
+    left: 120px;
+    animation-name: move2;
+    animation-duration: 2s;
+    transition: width 1s, height 1s;
+}
+
+@keyframes move2 {
+    0%      {opacity: 0; bottom: 200px;}
+    100%    {opacity: 1; bottom: 150px; left: 120px;}
 }
 
 #table1:hover{
     width: 350px;
     height: auto;
+}
+
+.background {
+    height: 880px;
+    background-color: #315332;
+}
+
+.lampBackground{
+    position: relative;
+    width: 350px;
+    height: 400px;
+    background-color: darkolivegreen;
+    left: 30px;
+    bottom: 60px; 
+    animation-name: move3;
+    animation-duration: 2s;   
+}
+
+#lamp{
+    position: relative;
+    height: 400px;
+    width: auto;
+    right: 50px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    transition: width 1s, height 1s;
+}
+
+#lamp:hover{
+    height: 500px;
+    width: auto;
+}
+
+@keyframes move3 {
+    0%      {opacity: 0; bottom: 100px;}
+    100%    {opacity: 1; bottom: 60px;}
+}
+
+.chairBackground{
+    position: relative;
+    width: 350px;
+    height: 400px;
+    background-color: darkolivegreen;
+    top: 60px; 
+    animation-name: move4;
+    animation-duration: 2s;   
+}
+
+#chair{
+    position: relative;
+    height: 400px;
+    width: auto;
+    right: 50px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    transition: width 1s, height 1s;
+}
+
+#chair:hover{
+    height: 500px;
+    width: auto;
+}
+
+@keyframes move3 {
+    0%      {opacity: 0; top: 0px;}
+    100%    {opacity: 1; top: 60px;}
+}
+
+.menuList{
+    color: #315332;
+}
+
+.menuList>ul{
+    list-style-type: none;
+}
+
+.backgroundProduct {
+    height: 720px;
+    width: 100%;
+    background-color: #315332;
+    color: white;
 }
